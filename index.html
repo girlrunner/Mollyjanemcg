@@ -4,274 +4,380 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Molly Lopez - Professional Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #3498db;
-            margin-top: 20px;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-    .contact-info {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-        .contact-info p {
-            margin: 5px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Molly Lopez</h1>
+    <div class="container">
+        <div class="card">
+            <header class="top">
+                <div>
+                    <h1 class="name">Molly Lopez</h1>
+                    <p class="tagline">Technical writer &amp; documentation specialist with 14+ years across the SDLC, focused on clear, usable content for modern cloud platforms and teams.</p>
+                </div>
+                <address class="contact">
+                    <div>
+                        1615 Northlake Springs Ct.<br>
+                        Decatur, GA 30033
+                    </div>
+                    <div><a href="mailto:mollyjanemcg@gmail.com">mollyjanemcg@gmail.com</a></div>
+                    <div><a href="tel:+14043767193">404-376-7193</a></div>
+                </address>
+            </header>
 
-    <div class="contact-info">
-        <p>
-            1615 Northlake Springs Ct.<br>
-            Decatur, GA 30033
-        </p>
-        <p>Email: mollyjanemcg@gmail.com</p>
-        <p>Phone: 404-376-7193</p>
-    </div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute; width:0; height:0; overflow:hidden" aria-hidden="true" focusable="false">
+                <symbol id="i-user" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2c-4.4 0-8 2.2-8 4.9A1.1 1.1 0 0 0 5.1 20h13.8A1.1 1.1 0 0 0 20 18.9C20 16.2 16.4 14 12 14Z"/>
+                </symbol>
+                <symbol id="i-tools" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M21 19.6 14.9 13.5a6.3 6.3 0 0 0-1.2-7.2l-2.6 2.6 1.6 1.6-2.1 2.1-1.6-1.6L6.4 13.6a6.3 6.3 0 0 0 7.2 1.2L19.6 21a1 1 0 0 0 1.4 0l0 0a1 1 0 0 0 0-1.4Z"/>
+                </symbol>
+                <symbol id="i-briefcase" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M9 6a3 3 0 0 1 3-3h0a3 3 0 0 1 3 3v1h4a2 2 0 0 1 2 2v3.2a3 3 0 0 1-1.6 2.6A16.7 16.7 0 0 1 12 17a16.7 16.7 0 0 1-7.4-2.2A3 3 0 0 1 3 12.2V9a2 2 0 0 1 2-2h4Zm2 1h2V6a1 1 0 0 0-1-1h0a1 1 0 0 0-1 1v1Zm-6 6.2a14.9 14.9 0 0 0 7 1.8 14.9 14.9 0 0 0 7-1.8V19a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-5.8Z"/>
+                </symbol>
+                <symbol id="i-academic" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12 3 1.5 8.2 12 13.4 22.5 8.2 12 3Zm-7 8.6V16c0 1.7 3.1 3.6 7 3.6s7-1.9 7-3.6v-4.4l-7 3.5-7-3.5Z"/>
+                </symbol>
+                <symbol id="i-cloud" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19 18H7.1A4.6 4.6 0 0 1 7 8.8a5.8 5.8 0 0 1 11.2 1.6 3.6 3.6 0 0 1 .8 7.6ZM7.1 10.8a2.6 2.6 0 0 0 0 5.2H19a1.6 1.6 0 1 0 0-3.2h-1.2l-.1-1.1a3.8 3.8 0 0 0-7.5-.6l-.2 1.1-1.2-.2a2.6 2.6 0 0 0-.7-.1Z"/>
+                </symbol>
+                <symbol id="i-link" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M10.6 13.4a1 1 0 0 1 0-1.4l3-3a3 3 0 1 1 4.2 4.2l-1.3 1.3a1 1 0 1 1-1.4-1.4l1.3-1.3a1 1 0 1 0-1.4-1.4l-3 3a1 1 0 0 1-1.4 0Zm2.8-2.8a1 1 0 0 1 0 1.4l-3 3a3 3 0 1 1-4.2-4.2l1.3-1.3a1 1 0 0 1 1.4 1.4L7.6 12.2A1 1 0 1 0 9 13.6l3-3a1 1 0 0 1 1.4 0Z"/>
+                </symbol>
+            </svg>
 
-    <div class="section">
-        <h2>Summary</h2>
-        <p>Highly motivated technical writer with over 14 years of experience in various aspects of the Software Development Life Cycle. Interested in using my writing and editing skills in a creative and dynamic environment. Exceptional written and verbal communication skills.</p>
-    </div>
+            <main class="main">
+                <aside class="col col--left">
+                    <section class="section" aria-labelledby="summary">
+                        <h2 class="section-title" id="summary">
+                            <svg class="icon" aria-hidden="true"><use href="#i-user"></use></svg>
+                            Summary
+                        </h2>
+                        <p>Highly motivated technical writer with over 14 years of experience in various aspects of the Software Development Life Cycle. Interested in using my writing and editing skills in a creative and dynamic environment. Exceptional written and verbal communication skills.</p>
+                    </section>
 
-    <div class="section">
-        <h2>Skills</h2>
-        <h3>Technical Writing and Editing</h3>
-        <ul>
-            <li>Develop SharePoint pages, libraries, and forms (with Power Apps)</li>
-            <li>Develop Power Automate workflows attached to SharePoint forms and lists</li>
-            <li>Interview/collaborate with Architects</li>
-            <li>Write and Edit Guidance, User Guides, Process, Architecture and Design Documents, Help, and Release Notes/Read Me files</li>
-            <li>Write and publish articles for Public Cloud communication newsletter</li>
-            <li>Create and manipulate graphics adhering to standards</li>
-            <li>Draft and publish testing documentation for each enhancement</li>
-            <li>Design and create standard documentation templates for decks, architecture diagrams, and documents</li>
-            <li>Develop documentation and publishing process</li>
-            <li>Create and maintain Style Guide</li>
-            <li>SharePoint expert</li>
-            <li>Microsoft Word expert</li>
-            <li>FrameMaker expert</li>
-            <li>Documentation for migrating to Azure, GCP, OCI, and AWS clouds</li>
-        </ul>
+                    <section class="section" aria-labelledby="skills">
+                        <h2 class="section-title" id="skills">
+                            <svg class="icon" aria-hidden="true"><use href="#i-tools"></use></svg>
+                            Skills
+                        </h2>
 
-        <h3>Business Analysis</h3>
-        <ul>
-            <li>Analyze Business Requirements</li>
-            <li>Analyze, Track, Gather and Document Technical Requirements</li>
-            <li>Act as Application Functional Expert</li>
-            <li>Perform Requirement Traceability</li>
-            <li>Write Use Cases</li>
-            <li>Write Process Models and Process Flows</li>
-            <li>Test Requirements</li>
-            <li>Maintain Document Change Control</li>
-            <li>Communicate with Client</li>
-            <li>Point of Contact for Developer Questions</li>
-            <li>Mentor Junior Level Analysts</li>
-        </ul>
+                        <article class="small" aria-label="Technical Writing and Editing">
+                            <p><strong>Technical Writing &amp; Editing</strong></p>
+                            <ul>
+                                <li>Develop SharePoint pages, libraries, and forms (with Power Apps)</li>
+                                <li>Develop Power Automate workflows attached to SharePoint forms and lists</li>
+                                <li>Interview/collaborate with Architects</li>
+                                <li>Write and Edit Guidance, User Guides, Process, Architecture and Design Documents, Help, and Release Notes/Read Me files</li>
+                                <li>Write and publish articles for Public Cloud communication newsletter</li>
+                                <li>Create and manipulate graphics adhering to standards</li>
+                                <li>Draft and publish testing documentation for each enhancement</li>
+                                <li>Design and create standard documentation templates for decks, architecture diagrams, and documents</li>
+                                <li>Develop documentation and publishing process</li>
+                                <li>Create and maintain Style Guide</li>
+                                <li>SharePoint expert</li>
+                                <li>Microsoft Word expert</li>
+                                <li>FrameMaker expert</li>
+                                <li>Documentation for migrating to Azure, GCP, OCI, and AWS clouds</li>
+                            </ul>
+                        </article>
 
-        <h3>Testing</h3>
-        <ul>
-            <li>Write Test Cases and Scenarios</li>
-            <li>Write Test Scripts and Test Plans</li>
-            <li>Perform Unit, Integration, System, Product, and User Acceptance Testing</li>
-            <li>Usability Testing</li>
-            <li>Create User Interface Definition</li>
-            <li>Track and Log Defects</li>
-            <li>Provide Defect Reports</li>
-            <li>Gather Test Data</li>
-        </ul>
+                        <article class="small" aria-label="Business Analysis">
+                            <p><strong>Business Analysis</strong></p>
+                            <ul>
+                                <li>Analyze Business Requirements</li>
+                                <li>Analyze, Track, Gather and Document Technical Requirements</li>
+                                <li>Act as Application Functional Expert</li>
+                                <li>Perform Requirement Traceability</li>
+                                <li>Write Use Cases</li>
+                                <li>Write Process Models and Process Flows</li>
+                                <li>Test Requirements</li>
+                                <li>Maintain Document Change Control</li>
+                                <li>Communicate with Client</li>
+                                <li>Point of Contact for Developer Questions</li>
+                                <li>Mentor Junior Level Analysts</li>
+                            </ul>
+                        </article>
 
-        <h3>Tools</h3>
-        <p>SharePoint Online, Power Apps, Power Automate, ADO, Agile, ARC, Jira Align, Multi-Cloud (Azure, AWS, OCI, GCP), Infrastructure, Microsoft Office 365, UNIX, SuperPutty, Postman, Robo Mongo, Wiki</p>
-    </div>
+                        <article class="small" aria-label="Testing">
+                            <p><strong>Testing</strong></p>
+                            <ul>
+                                <li>Write Test Cases and Scenarios</li>
+                                <li>Write Test Scripts and Test Plans</li>
+                                <li>Perform Unit, Integration, System, Product, and User Acceptance Testing</li>
+                                <li>Usability Testing</li>
+                                <li>Create User Interface Definition</li>
+                                <li>Track and Log Defects</li>
+                                <li>Provide Defect Reports</li>
+                                <li>Gather Test Data</li>
+                            </ul>
+                        </article>
 
-    <div class="section">
-        <h2>Education</h2>
-        <h3>University of Georgia, Athens, GA (1989-1993)</h3>
-        <p>B.A., German, Major GPA (3.6/4.0) Cumulative (3.1/4.0)</p>
-        <ul>
-            <li>German: Studied language, literature, and culture at Erlangen University, Erlangen, Germany (Summer 1992)</li>
-            <li>Russian: Studied Russian for one year at UGA (3.8/4.0)</li>
-        </ul>
-    </div>
+                        <article class="small" aria-label="Tools">
+                            <p><strong>Tools</strong></p>
+                            <div class="pills" role="list">
+                                <span class="pill" role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg>SharePoint Online</span>
+                                <span class="pill" role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg>Power Apps</span>
+                                <span class="pill" role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg>Power Automate</span>
+                                <span class="pill" role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg>ADO</span>
+                                <span class="pill" role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg>Jira Align</span>
+                                <span class="pill" role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg>Agile</span>
+                                <span class="pill" role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg>Multi-Cloud (Azure/AWS/OCI/GCP)</span>
+                                <span class="pill" role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg>Microsoft 365</span>
+                                <span class="pill" role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg>Postman</span>
+                                <span class="pill" role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg>Robo Mongo</span>
+                                <span class="pill" role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg>UNIX</span>
+                                <span class="pill" role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg>Wiki</span>
+                            </div>
+                            <p class="print-hint">Tip: this page is print-friendly (use your browsers Print to PDF).</p>
+                        </article>
+                    </section>
 
-    <div class="section">
-        <h2>Career Highlights</h2>
+                    <section class="section" aria-labelledby="education">
+                        <h2 class="section-title" id="education">
+                            <svg class="icon" aria-hidden="true"><use href="#i-academic"></use></svg>
+                            Education
+                        </h2>
+                        <p><strong>University of Georgia</strong></p>
+                        <p class="subtle" style="margin-top:-6px;">Athens, GA • 1989</p>
+                        <p>B.A., German, Major GPA (3.6/4.0) Cumulative (3.1/4.0)</p>
+                        <ul>
+                            <li>German: Studied language, literature, and culture at Erlangen University, Erlangen, Germany (Summer 1992)</li>
+                            <li>Russian: Studied Russian for one year at UGA (3.8/4.0)</li>
+                        </ul>
+                    </section>
 
-        <h3>Contractor for AT&T, Atlanta, GA</h3>
-        <p><em>February 2023-Present</em></p>
-        <p><strong>Cloud Solutions Architect – Burgeon IT for AT&T</strong></p>
-        <p>Provide technical writing, editing and SharePoint development expertise to the Multi-Cloud Enablers and Automation team.</p>
-        <ul>
-            <li>Write and publish user documentation for ADO to GitHub migration for all App teams using ADO repos.</li>
-            <li>Provide documentation needs analysis, development, and publication for each of 14 projects within the Public Cloud Multi-Cloud Connectors team through management of user stories completed during monthly sprints.</li>
-            <li>Create and publish one and two-pager overview slide templates and content to be consumed by upper management</li>
-            <li>Create and publish Product Overview decks to be consumed by leadership or new team members.</li>
-            <li>Participate in development team for Knowledge Center project as usability and content expert. Act as approver for all articles published to Knowledge Center.</li>
-            <li>Conceptualize and implement project site maps for each CSP and tool within the organization including Azure, AWS, GCP, OCI, Self-Service Portal and Subscription Management Tool.</li>
-            <li>Work with each project team to create appropriate documentation for each area's site map. Reevaluate for upcoming sprints to determine gaps and create user stories to complete the documentation.</li>
-            <li>Write and publish release notes for each project team.</li>
-            <li>Create and publish Public Cloud newsletter articles to be consumed by AT&T employees.</li>
-            <li>Enhance project Power Automate workflows and Power Apps forms as new requirements emerge.</li>
-            <li>Gatekeeper and creator for templates and standards. Verify presentations adhere to template and assist teams with deck preparation and content.</li>
-            <li>Maintain process to add FQDNs to Global Allow Lists for each CSP.</li>
-            <li>Verify architecture diagrams adhere to standards.</li>
-        </ul>
+                    <section class="section" aria-labelledby="portfolio">
+                        <h2 class="section-title" id="portfolio">
+                            <svg class="icon" aria-hidden="true"><use href="#i-link"></use></svg>
+                            Portfolio
+                        </h2>
+                        <p><a href="./Writing%20Samples.docx">Writing Samples</a></p>
+                    </section>
+                </aside>
 
-        <h3>Contractor for AT&T, Atlanta, GA</h3>
-        <p><em>March 2022 – January 2023</em></p>
-        <p><strong>Software Engineer/IT Consultant – Infosys</strong></p>
-        <p>Provide technical writing, editing and SharePoint development expertise to the Multi-Cloud Enablers and Automation team.</p>
-        <ul>
-            <li>Manage permissions and content for Public Cloud Architecture and Migration SharePoint site.</li>
-            <li>Complete weekly and monthly documentation user stories tracked through Azure DevOps boards.</li>
-            <li>Elicit and write functional requirements for IPAM enhancements.</li>
-            <li>Create User Guide for SMT functionality. Create and publish release notes for monthly releases.</li>
-            <li>Develop user documentation for and provide assistance to over 300 attendees during the Public Cloud Software Symposium.</li>
-            <li>Develop Google Cloud Platform Infrastructure Change Request intake form and Power Automate workflows.</li>
-            <li>Write Public Cloud newsletter articles with quick turnaround times.</li>
-            <li>Develop Oracle Cloud Infrastructure Change Request intake form using SharePoint and Power Apps.</li>
-            <li>Document internal processes such as pipelines, network flows, IP Allocation, and allow listing.</li>
-            <li>Write AWS documentation for Setting up a Mech ID in UPSTART and API Key Setup in UPSTART.</li>
-            <li>Collaborate with Architect Team Leads on their documentation needs for each sprint.</li>
-            <li>Assist developers in writing architecture and design documents. Manage and publish to SharePoint library.</li>
-            <li>Work with Microsoft team to manage, create, and update Azure Monitoring documentation on their wiki as well as our team's SharePoint sites.</li>
-        </ul>
+                <section class="col" aria-labelledby="experience">
+                    <h2 class="section-title" id="experience">
+                        <svg class="icon" aria-hidden="true"><use href="#i-briefcase"></use></svg>
+                        Experience
+                    </h2>
 
+                    <article class="job">
+                        <header class="job-header">
+                            <div>
+                                <h3 class="job-role">Cloud Solutions Architect</h3>
+                                <p class="job-org"><strong>Contractor for AT&amp;T</strong> • Burgeon IT • Atlanta, GA</p>
+                            </div>
+                            <div class="job-meta">February 2023 – Present</div>
+                        </header>
+                        <p>Provide technical writing, editing and SharePoint development expertise to the Multi-Cloud Enablers and Automation team.</p>
+                        <ul>
+                            <li>Write and publish user documentation for ADO to GitHub migration for all App teams using ADO repos.</li>
+                            <li>Provide documentation needs analysis, development, and publication for each of 14 projects within the Public Cloud Multi-Cloud Connectors team through management of user stories completed during monthly sprints.</li>
+                            <li>Create and publish one and two-pager overview slide templates and content to be consumed by upper management</li>
+                            <li>Create and publish Product Overview decks to be consumed by leadership or new team members.</li>
+                            <li>Participate in development team for Knowledge Center project as usability and content expert. Act as approver for all articles published to Knowledge Center.</li>
+                            <li>Conceptualize and implement project site maps for each CSP and tool within the organization including Azure, AWS, GCP, OCI, Self-Service Portal and Subscription Management Tool.</li>
+                            <li>Work with each project team to create appropriate documentation for each area's site map. Reevaluate for upcoming sprints to determine gaps and create user stories to complete the documentation.</li>
+                            <li>Write and publish release notes for each project team.</li>
+                            <li>Create and publish Public Cloud newsletter articles to be consumed by AT&amp;T employees.</li>
+                            <li>Enhance project Power Automate workflows and Power Apps forms as new requirements emerge.</li>
+                            <li>Gatekeeper and creator for templates and standards. Verify presentations adhere to template and assist teams with deck preparation and content.</li>
+                            <li>Maintain process to add FQDNs to Global Allow Lists for each CSP.</li>
+                            <li>Verify architecture diagrams adhere to standards.</li>
+                        </ul>
+                    </article>
 
-        <h3>Contractor for AT&T, Atlanta, GA</h3>
-        <p class="job-date">February 2021 – February 2022</p>
-        <p class="job-title">Technical Writer/Software Engineer – Matrix Resources</p>
-        <p>The Multi-Cloud Enablers and Automation team provides Bastion services, onboarding automation, and patterns to Application teams across the major Public Cloud platforms in use by AT&T.</p>
-        <p><em>Technologies: Azure DevOps, Amazon Web Services (AWS), SharePoint, Power Automate, Microsoft Office 365</em></p>
-        <ul>
-            <li>Worked with AWS Architect Lead and team members to plan, create, and implement AWS migration and new account creation process pages and related request forms.</li>
-            <li>Wrote Public Cloud newsletter articles with quick turnaround times for a wide audience.</li>
-            <li>Implemented Multi-Cloud Enablers and Automation team orientation page.</li>
-            <li>Documented and improved workflows for updating the Global Allow List.</li>
-            <li>Defined standard documentation templates and publication processes.</li>
-            <li>Collaborated with Architect Team Leads on documentation needs for each sprint.</li>
-            <li>Managed and published weekly podcasts in team newsletter and built SharePoint pages.</li>
-            <li>Assisted developers in writing architecture and design documents.</li>
-            <li>Updated Azure Monitoring documentation on wiki and SharePoint sites.</li>
-        </ul>
+                    <article class="job">
+                        <header class="job-header">
+                            <div>
+                                <h3 class="job-role">Software Engineer / IT Consultant</h3>
+                                <p class="job-org"><strong>Contractor for AT&amp;T</strong> • Infosys • Atlanta, GA</p>
+                            </div>
+                            <div class="job-meta">March 2022 – January 2023</div>
+                        </header>
+                        <p>Provide technical writing, editing and SharePoint development expertise to the Multi-Cloud Enablers and Automation team.</p>
+                        <ul>
+                            <li>Manage permissions and content for Public Cloud Architecture and Migration SharePoint site.</li>
+                            <li>Complete weekly and monthly documentation user stories tracked through Azure DevOps boards.</li>
+                            <li>Elicit and write functional requirements for IPAM enhancements.</li>
+                            <li>Create User Guide for SMT functionality. Create and publish release notes for monthly releases.</li>
+                            <li>Develop user documentation for and provide assistance to over 300 attendees during the Public Cloud Software Symposium.</li>
+                            <li>Develop Google Cloud Platform Infrastructure Change Request intake form and Power Automate workflows.</li>
+                            <li>Write Public Cloud newsletter articles with quick turnaround times.</li>
+                            <li>Develop Oracle Cloud Infrastructure Change Request intake form using SharePoint and Power Apps.</li>
+                            <li>Document internal processes such as pipelines, network flows, IP Allocation, and allow listing.</li>
+                            <li>Write AWS documentation for Setting up a Mech ID in UPSTART and API Key Setup in UPSTART.</li>
+                            <li>Collaborate with Architect Team Leads on their documentation needs for each sprint.</li>
+                            <li>Assist developers in writing architecture and design documents. Manage and publish to SharePoint library.</li>
+                            <li>Work with Microsoft team to manage, create, and update Azure Monitoring documentation on their wiki as well as our team's SharePoint sites.</li>
+                        </ul>
+                    </article>
 
-        <h3>Contractor for AT&T, Atlanta, GA</h3>
-        <p class="job-date">November 2019 – June 2020</p>
-        <p class="job-title">Technical Writer/Software Engineer – Tech Mahindra</p>
-        <p>Worked on the Credit Decision Engine (CDE) application using AT&T Integrated Cognitive Analytics and Personalization technology.</p>
-        <p><em>Technologies: ICAP, Streaming Analytics, ETL, Rules and Actions, Cloud Microservices, Redis, Kafka, Flink</em></p>
-        <ul>
-            <li>Conceptualized and wrote process documentation for CDE test team.</li>
-            <li>Created standard test plan templates and wrote test plans for feature releases.</li>
-            <li>Assisted developers in writing detailed design documents.</li>
-            <li>Standardized various document templates.</li>
-            <li>Created and maintained ICAP wiki for archiving documentation.</li>
-            <li>Mentored new test team members.</li>
-            <li>Performed debug analysis and gathered test data for system and UAT testing.</li>
-        </ul>
+                    <article class="job">
+                        <header class="job-header">
+                            <div>
+                                <h3 class="job-role">Technical Writer / Software Engineer</h3>
+                                <p class="job-org"><strong>Contractor for AT&amp;T</strong> • Matrix Resources • Atlanta, GA</p>
+                            </div>
+                            <div class="job-meta">February 2021 • February 2022</div>
+                        </header>
+                        <p>The Multi-Cloud Enablers and Automation team provides Bastion services, onboarding automation, and patterns to Application teams across the major Public Cloud platforms in use by AT&amp;T.</p>
+                        <p class="tech"><em>Technologies:</em> Azure DevOps, Amazon Web Services (AWS), SharePoint, Power Automate, Microsoft Office 365</p>
+                        <ul>
+                            <li>Worked with AWS Architect Lead and team members to plan, create, and implement AWS migration and new account creation process pages and related request forms.</li>
+                            <li>Wrote Public Cloud newsletter articles with quick turnaround times for a wide audience.</li>
+                            <li>Implemented Multi-Cloud Enablers and Automation team orientation page.</li>
+                            <li>Documented and improved workflows for updating the Global Allow List.</li>
+                            <li>Defined standard documentation templates and publication processes.</li>
+                            <li>Collaborated with Architect Team Leads on documentation needs for each sprint.</li>
+                            <li>Managed and published weekly podcasts in team newsletter and built SharePoint pages.</li>
+                            <li>Assisted developers in writing architecture and design documents.</li>
+                            <li>Updated Azure Monitoring documentation on wiki and SharePoint sites.</li>
+                        </ul>
+                    </article>
 
-        <h3>Freelance Editor</h3>
-        <ul>
-            <li>Wrote technical requirements for MotoringAhead.com (Winter 2021)</li>
-            <li>Edited self-help book "Preferential Treatment: 'Favor Ain't Fair'" by Min. James C. Warrick, Jr. (Summer 2015)</li>
-            <li>Edited fictional novel for professional creative writer (Spring 2008)</li>
-        </ul>
+                    <article class="job">
+                        <header class="job-header">
+                            <div>
+                                <h3 class="job-role">Technical Writer / Software Engineer</h3>
+                                <p class="job-org"><strong>Contractor for AT&amp;T</strong> • Tech Mahindra • Atlanta, GA</p>
+                            </div>
+                            <div class="job-meta">November 2019 • June 2020</div>
+                        </header>
+                        <p>Worked on the Credit Decision Engine (CDE) application using AT&amp;T Integrated Cognitive Analytics and Personalization technology.</p>
+                        <p class="tech"><em>Technologies:</em> ICAP, Streaming Analytics, ETL, Rules and Actions, Cloud Microservices, Redis, Kafka, Flink</p>
+                        <ul>
+                            <li>Conceptualized and wrote process documentation for CDE test team.</li>
+                            <li>Created standard test plan templates and wrote test plans for feature releases.</li>
+                            <li>Assisted developers in writing detailed design documents.</li>
+                            <li>Standardized various document templates.</li>
+                            <li>Created and maintained ICAP wiki for archiving documentation.</li>
+                            <li>Mentored new test team members.</li>
+                            <li>Performed debug analysis and gathered test data for system and UAT testing.</li>
+                        </ul>
+                    </article>
 
-        <h3>Contractor for BellSouth, Atlanta, GA</h3>
-        <p class="job-date">November 2005 – August 2006</p>
-        <p class="job-title">Web Operations Manager Online Retail Markets – Matrix Resources</p>
-        <ul>
-            <li>Defined business and technical requirements for Internet products on bellsouth.com.</li>
-            <li>Managed customer experience and ordering ability for Internet products.</li>
-            <li>Coordinated with BellSouth architects and Accenture delivery teams on project lifecycles.</li>
-            <li>Initiated website improvements for better customer experience.</li>
-        </ul>
+                    <article class="job">
+                        <header class="job-header">
+                            <div>
+                                <h3 class="job-role">Freelance Editor</h3>
+                                <p class="job-org"><strong>Independent</strong></p>
+                            </div>
+                        </header>
+                        <ul>
+                            <li>Wrote technical requirements for MotoringAhead.com (Winter 2021)</li>
+                            <li>Edited self-help book <em>Preferential Treatment: Favor Ain’t Fair</em> by Min. James C. Warrick, Jr. (Summer 2015)</li>
+                            <li>Edited fictional novel for professional creative writer (Spring 2008)</li>
+                        </ul>
+                    </article>
 
-        <p class="job-title">Business Analyst Consumer Technologies Group – Matrix Resources</p>
-        <ul>
-            <li>Gathered and wrote business and technical requirements for the C-Order application.</li>
-            <li>Served as Functional Expert for eStore consumer ordering applications.</li>
-            <li>Performed UAT and post-production testing on assigned work requests.</li>
-        </ul>
+                    <article class="job">
+                        <header class="job-header">
+                            <div>
+                                <h3 class="job-role">Web Operations Manager, Online Retail Markets</h3>
+                                <p class="job-org"><strong>Contractor for BellSouth</strong> • Matrix Resources • Atlanta, GA</p>
+                            </div>
+                            <div class="job-meta">November 2005 • August 2006</div>
+                        </header>
+                        <ul>
+                            <li>Defined business and technical requirements for Internet products on bellsouth.com.</li>
+                            <li>Managed customer experience and ordering ability for Internet products.</li>
+                            <li>Coordinated with BellSouth architects and Accenture delivery teams on project lifecycles.</li>
+                            <li>Initiated website improvements for better customer experience.</li>
+                        </ul>
 
-        <h3>BellSouth Accenture Sourcing Arrangement, Norcross, GA</h3>
-        <p class="job-date">January 2002 – November 2005</p>
-        <p class="job-title">Lead Software Developer – eStore Rip and Read SLA Team</p>
-        <ul>
-            <li>Delivered over 20 new Rip and Read (RnR) ordering flows for BellSouth eStore.</li>
-            <li>Completed total redesigns of 2 major ordering flows.</li>
-            <li>Led new developers in creating front-end designs and implementations.</li>
-        </ul>
+                        <p class="job-role" style="margin-top:12px;">Business Analyst, Consumer Technologies Group</p>
+                        <ul>
+                            <li>Gathered and wrote business and technical requirements for the C-Order application.</li>
+                            <li>Served as Functional Expert for eStore consumer ordering applications.</li>
+                            <li>Performed UAT and post-production testing on assigned work requests.</li>
+                        </ul>
+                    </article>
 
-        <p class="job-title">Senior Functional Analyst</p>
-        <ul>
-            <li>Gathered and wrote technical requirements for various eStore applications.</li>
-            <li>Participated in architecture and design of RnR platform.</li>
-            <li>Conducted client reviews of technical requirements and screen prototypes.</li>
-        </ul>
+                    <article class="job">
+                        <header class="job-header">
+                            <div>
+                                <h3 class="job-role">Lead Software Developer</h3>
+                                <p class="job-org"><strong>BellSouth Accenture Sourcing Arrangement</strong> • Norcross, GA</p>
+                            </div>
+                            <div class="job-meta">January 2002 • November 2005</div>
+                        </header>
+                        <p class="subtle">eStore  Rip and Read SLA Team</p>
+                        <ul>
+                            <li>Delivered over 20 new Rip and Read (RnR) ordering flows for BellSouth eStore.</li>
+                            <li>Completed total redesigns of 2 major ordering flows.</li>
+                            <li>Led new developers in creating front-end designs and implementations.</li>
+                        </ul>
 
-        <h3>BellSouth Customer Technologies, Inc., Norcross, GA</h3>
-        <p class="job-date">October 2000 – January 2002</p>
-        <p class="job-title">Documentation Team Lead – BellSouth eStore</p>
-        <ul>
-            <li>Managed team of 6 technical writers and editors.</li>
-            <li>Designed and implemented Documentation Web sites.</li>
-            <li>Developed and mentored technical writing staff and entry-level analysts.</li>
-        </ul>
+                        <p class="job-role" style="margin-top:12px;">Senior Functional Analyst</p>
+                        <ul>
+                            <li>Gathered and wrote technical requirements for various eStore applications.</li>
+                            <li>Participated in architecture and design of RnR platform.</li>
+                            <li>Conducted client reviews of technical requirements and screen prototypes.</li>
+                        </ul>
+                    </article>
 
-        <h3>BellSouth Applied Technologies, Inc., Norcross, GA</h3>
-        <p class="job-date">December 1997 – October 2000</p>
-        <p class="job-title">Technical Writer II</p>
-        <ul>
-            <li>Wrote software requirements, online help, UID, and release notes for Local Number Portability (LNP).</li>
-            <li>Produced documentation for Interconnect Customer Reference system (ICREF).</li>
-        </ul>
+                    <article class="job">
+                        <header class="job-header">
+                            <div>
+                                <h3 class="job-role">Documentation Team Lead</h3>
+                                <p class="job-org"><strong>BellSouth Consumer Technologies, Inc.</strong> • Norcross, GA</p>
+                            </div>
+                            <div class="job-meta">October 2000 • January 2002</div>
+                        </header>
+                        <p class="subtle">BellSouth eStore</p>
+                        <ul>
+                            <li>Managed team of 6 technical writers and editors.</li>
+                            <li>Designed and implemented Documentation Web sites.</li>
+                            <li>Developed and mentored technical writing staff and entry-level analysts.</li>
+                        </ul>
+                    </article>
 
-        <h3>W. E. Carson, Inc., Alpharetta, GA</h3>
-        <p class="job-date">March 1997 – December 1997</p>
-        <p class="job-title">Publications Specialist (consultant for BellSouth Applied Technologies, Inc.)</p>
-        <ul>
-            <li>Wrote documentation for software updates to user and administrator manuals.</li>
-            <li>Provided editorial and publishing software expertise to staff members.</li>
-        </ul>
+                    <article class="job">
+                        <header class="job-header">
+                            <div>
+                                <h3 class="job-role">Technical Writer II</h3>
+                                <p class="job-org"><strong>BellSouth Applied Technologies, Inc.</strong> • Norcross, GA</p>
+                            </div>
+                            <div class="job-meta">December 1997 • October 2000</div>
+                        </header>
+                        <ul>
+                            <li>Wrote software requirements, online help, UID, and release notes for Local Number Portability (LNP).</li>
+                            <li>Produced documentation for Interconnect Customer Reference system (ICREF).</li>
+                        </ul>
+                    </article>
 
-        <h3>Manufacturing Technologies, Inc., Robins AFB, GA</h3>
-        <p class="job-date">January 1996 – March 1997</p>
-        <p class="job-title">Logistics Analyst</p>
-        <ul>
-            <li>Edited, updated, and proofed technical publications for F-15 Avionics software systems.</li>
-            <li>Received CMM training and became proficient in various editing programs.</li>
-        </ul>
-    </div>
+                    <article class="job">
+                        <header class="job-header">
+                            <div>
+                                <h3 class="job-role">Publications Specialist</h3>
+                                <p class="job-org"><strong>W. E. Carson, Inc.</strong> • Alpharetta, GA</p>
+                            </div>
+                            <div class="job-meta">March 1997 • December 1997</div>
+                        </header>
+                        <p class="subtle">Consultant for BellSouth Applied Technologies, Inc.</p>
+                        <ul>
+                            <li>Wrote documentation for software updates to user and administrator manuals.</li>
+                            <li>Provided editorial and publishing software expertise to staff members.</li>
+                        </ul>
+                    </article>
 
-    </div>
-
-    <div class="section">
-        <h2>Portfolio</h2>
-        <a href="./Writing%20Samples.docx">Writing Samples</a>
+                    <article class="job">
+                        <header class="job-header">
+                            <div>
+                                <h3 class="job-role">Logistics Analyst</h3>
+                                <p class="job-org"><strong>Manufacturing Technologies, Inc.</strong> • Robins AFB, GA</p>
+                            </div>
+                            <div class="job-meta">January 1996 • March 1997</div>
+                        </header>
+                        <ul>
+                            <li>Edited, updated, and proofed technical publications for F-15 Avionics software systems.</li>
+                            <li>Received CMM training and became proficient in various editing programs.</li>
+                        </ul>
+                    </article>
+                </section>
+            </main>
+        </div>
     </div>
 </body>
 </html>
